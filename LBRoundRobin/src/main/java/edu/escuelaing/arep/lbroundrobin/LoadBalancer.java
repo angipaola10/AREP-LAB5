@@ -10,7 +10,7 @@ public class LoadBalancer
     public static void main(String[] args) {
         port(getPort());
         staticFileLocation("/");
-        LoadBalancerClient lbClient = new LoadBalancerClient( new String[]{"http://127.0.0.1:35001", "http://127.0.0.1:35002", "http://127.0.0.1:35003"});
+        LoadBalancerClient lbClient = new LoadBalancerClient( new String[]{"http://172.17.0.1:35001", "http://172.17.0.1:35002", "http://172.17.0.1:35003"});
         get("/", (req, res) -> {
             res.redirect("/index.html");
             res.status(200);

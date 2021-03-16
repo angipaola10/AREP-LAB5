@@ -2,18 +2,14 @@ version: '3'
 
 services:
     loadbalancer:
-        build:
-            context: ./LBRoundRobin
-            dockerfile: Dockerfile
+        image: angipaola10/lbroundrobin:v1.0
         container_name: loadbalancer
         ports:
             - "35008:6000"
         depends_on:
             - logservice
     logservice:
-        build:
-            context: ./LogService
-            dockerfile: Dockerfile
+        image: angipaola10/logservice:v1.0
         ports:
             - "35001-35003:6000"
         depends_on:
@@ -31,4 +27,3 @@ services:
         ports:
             - 27017:27017
         command: mongod
-    
