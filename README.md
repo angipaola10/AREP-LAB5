@@ -1,4 +1,4 @@
-# Laboratorio 5 - Docker and AWS
+# Laboratory 5 - Docker and AWS
 
 ## Getting started
 ### Prerequisites
