@@ -54,7 +54,7 @@ This repository contains two projects that were developed to create the [images]
 * Add and show messages in the web client of the load balancer:
 ![test](https://media.giphy.com/media/XPefYipelYHk329EhC/giphy.gif)
 
-* Instances of LogServices run in the ports 35001, 35002 and 35003:
+* Instances of LogServices running in the ports 35001, 35002 and 35003:
 ![](https://media.giphy.com/media/L5aujdXKClCjhlpAX4/giphy.gif)
 
 ## Documentation
